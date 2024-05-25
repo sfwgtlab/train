@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A09DB32B2C017E6C00B35E13 /* ColliTrenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DB32A2C017E6C00B35E13 /* ColliTrenApp.swift */; };
+		A09DB32D2C017E6C00B35E13 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DB32C2C017E6C00B35E13 /* ContentView.swift */; };
+		A09DB32F2C017E6D00B35E13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A09DB32E2C017E6D00B35E13 /* Assets.xcassets */; };
+		A09DB3322C017E6D00B35E13 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A09DB3312C017E6D00B35E13 /* Preview Assets.xcassets */; };
+		A09DB33C2C017E6D00B35E13 /* ColliTrenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DB33B2C017E6D00B35E13 /* ColliTrenTests.swift */; };
+		A09DB3462C017E6D00B35E13 /* ColliTrenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DB3452C017E6D00B35E13 /* ColliTrenUITests.swift */; };
+		A09DB3482C017E6D00B35E13 /* ColliTrenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DB3472C017E6D00B35E13 /* ColliTrenUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A09DB3382C017E6D00B35E13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A09DB31F2C017E6C00B35E13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A09DB3262C017E6C00B35E13;
+			remoteInfo = ColliTren;
+		};
+		A09DB3422C017E6D00B35E13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A09DB31F2C017E6C00B35E13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A09DB3262C017E6C00B35E13;
+			remoteInfo = ColliTren;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A09DB3272C017E6C00B35E13 /* ColliTren.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColliTren.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A09DB32A2C017E6C00B35E13 /* ColliTrenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColliTrenApp.swift; sourceTree = "<group>"; };
+		A09DB32C2C017E6C00B35E13 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A09DB32E2C017E6D00B35E13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A09DB3312C017E6D00B35E13 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A09DB3372C017E6D00B35E13 /* ColliTrenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColliTrenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A09DB33B2C017E6D00B35E13 /* ColliTrenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColliTrenTests.swift; sourceTree = "<group>"; };
+		A09DB3412C017E6D00B35E13 /* ColliTrenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColliTrenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A09DB3452C017E6D00B35E13 /* ColliTrenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColliTrenUITests.swift; sourceTree = "<group>"; };
+		A09DB3472C017E6D00B35E13 /* ColliTrenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColliTrenUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A09DB3242C017E6C00B35E13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A09DB3342C017E6D00B35E13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A09DB33E2C017E6D00B35E13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A09DB31E2C017E6C00B35E13 = {
+			isa = PBXGroup;
+			children = (
+				A09DB3292C017E6C00B35E13 /* ColliTren */,
+				A09DB33A2C017E6D00B35E13 /* ColliTrenTests */,
+				A09DB3442C017E6D00B35E13 /* ColliTrenUITests */,
+				A09DB3282C017E6C00B35E13 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A09DB3282C017E6C00B35E13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A09DB3272C017E6C00B35E13 /* ColliTren.app */,
+				A09DB3372C017E6D00B35E13 /* ColliTrenTests.xctest */,
+				A09DB3412C017E6D00B35E13 /* ColliTrenUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A09DB3292C017E6C00B35E13 /* ColliTren */ = {
+			isa = PBXGroup;
+			children = (
+				A09DB32A2C017E6C00B35E13 /* ColliTrenApp.swift */,
+				A09DB32C2C017E6C00B35E13 /* ContentView.swift */,
+				A09DB32E2C017E6D00B35E13 /* Assets.xcassets */,
+				A09DB3302C017E6D00B35E13 /* Preview Content */,
+			);
+			path = ColliTren;
+			sourceTree = "<group>";
+		};
+		A09DB3302C017E6D00B35E13 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A09DB3312C017E6D00B35E13 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A09DB33A2C017E6D00B35E13 /* ColliTrenTests */ = {
+			isa = PBXGroup;
+			children = (
+				A09DB33B2C017E6D00B35E13 /* ColliTrenTests.swift */,
+			);
+			path = ColliTrenTests;
+			sourceTree = "<group>";
+		};
+		A09DB3442C017E6D00B35E13 /* ColliTrenUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A09DB3452C017E6D00B35E13 /* ColliTrenUITests.swift */,
+				A09DB3472C017E6D00B35E13 /* ColliTrenUITestsLaunchTests.swift */,
+			);
+			path = ColliTrenUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A09DB3262C017E6C00B35E13 /* ColliTren */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A09DB34B2C017E6D00B35E13 /* Build configuration list for PBXNativeTarget "ColliTren" */;
+			buildPhases = (
+				A09DB3232C017E6C00B35E13 /* Sources */,
+				A09DB3242C017E6C00B35E13 /* Frameworks */,
+				A09DB3252C017E6C00B35E13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColliTren;
+			productName = ColliTren;
+			productReference = A09DB3272C017E6C00B35E13 /* ColliTren.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A09DB3362C017E6D00B35E13 /* ColliTrenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A09DB34E2C017E6D00B35E13 /* Build configuration list for PBXNativeTarget "ColliTrenTests" */;
+			buildPhases = (
+				A09DB3332C017E6D00B35E13 /* Sources */,
+				A09DB3342C017E6D00B35E13 /* Frameworks */,
+				A09DB3352C017E6D00B35E13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A09DB3392C017E6D00B35E13 /* PBXTargetDependency */,
+			);
+			name = ColliTrenTests;
+			productName = ColliTrenTests;
+			productReference = A09DB3372C017E6D00B35E13 /* ColliTrenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A09DB3402C017E6D00B35E13 /* ColliTrenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A09DB3512C017E6D00B35E13 /* Build configuration list for PBXNativeTarget "ColliTrenUITests" */;
+			buildPhases = (
+				A09DB33D2C017E6D00B35E13 /* Sources */,
+				A09DB33E2C017E6D00B35E13 /* Frameworks */,
+				A09DB33F2C017E6D00B35E13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A09DB3432C017E6D00B35E13 /* PBXTargetDependency */,
+			);
+			name = ColliTrenUITests;
+			productName = ColliTrenUITests;
+			productReference = A09DB3412C017E6D00B35E13 /* ColliTrenUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A09DB31F2C017E6C00B35E13 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A09DB3262C017E6C00B35E13 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					A09DB3362C017E6D00B35E13 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = A09DB3262C017E6C00B35E13;
+					};
+					A09DB3402C017E6D00B35E13 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = A09DB3262C017E6C00B35E13;
+					};
+				};
+			};
+			buildConfigurationList = A09DB3222C017E6C00B35E13 /* Build configuration list for PBXProject "ColliTren" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A09DB31E2C017E6C00B35E13;
+			productRefGroup = A09DB3282C017E6C00B35E13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A09DB3262C017E6C00B35E13 /* ColliTren */,
+				A09DB3362C017E6D00B35E13 /* ColliTrenTests */,
+				A09DB3402C017E6D00B35E13 /* ColliTrenUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A09DB3252C017E6C00B35E13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A09DB3322C017E6D00B35E13 /* Preview Assets.xcassets in Resources */,
+				A09DB32F2C017E6D00B35E13 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A09DB3352C017E6D00B35E13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A09DB33F2C017E6D00B35E13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A09DB3232C017E6C00B35E13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A09DB32D2C017E6C00B35E13 /* ContentView.swift in Sources */,
+				A09DB32B2C017E6C00B35E13 /* ColliTrenApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A09DB3332C017E6D00B35E13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A09DB33C2C017E6D00B35E13 /* ColliTrenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A09DB33D2C017E6D00B35E13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A09DB3462C017E6D00B35E13 /* ColliTrenUITests.swift in Sources */,
+				A09DB3482C017E6D00B35E13 /* ColliTrenUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A09DB3392C017E6D00B35E13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A09DB3262C017E6C00B35E13 /* ColliTren */;
+			targetProxy = A09DB3382C017E6D00B35E13 /* PBXContainerItemProxy */;
+		};
+		A09DB3432C017E6D00B35E13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A09DB3262C017E6C00B35E13 /* ColliTren */;
+			targetProxy = A09DB3422C017E6D00B35E13 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A09DB3492C017E6D00B35E13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A09DB34A2C017E6D00B35E13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A09DB34C2C017E6D00B35E13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ColliTren/Preview Content\"";
+				DEVELOPMENT_TEAM = VKGF59T4WT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gtlab.ColliTren;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A09DB34D2C017E6D00B35E13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ColliTren/Preview Content\"";
+				DEVELOPMENT_TEAM = VKGF59T4WT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gtlab.ColliTren;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A09DB34F2C017E6D00B35E13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VKGF59T4WT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gtlab.ColliTrenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColliTren.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ColliTren";
+			};
+			name = Debug;
+		};
+		A09DB3502C017E6D00B35E13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VKGF59T4WT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gtlab.ColliTrenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColliTren.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ColliTren";
+			};
+			name = Release;
+		};
+		A09DB3522C017E6D00B35E13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VKGF59T4WT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gtlab.ColliTrenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ColliTren;
+			};
+			name = Debug;
+		};
+		A09DB3532C017E6D00B35E13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VKGF59T4WT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gtlab.ColliTrenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ColliTren;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A09DB3222C017E6C00B35E13 /* Build configuration list for PBXProject "ColliTren" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A09DB3492C017E6D00B35E13 /* Debug */,
+				A09DB34A2C017E6D00B35E13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A09DB34B2C017E6D00B35E13 /* Build configuration list for PBXNativeTarget "ColliTren" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A09DB34C2C017E6D00B35E13 /* Debug */,
+				A09DB34D2C017E6D00B35E13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A09DB34E2C017E6D00B35E13 /* Build configuration list for PBXNativeTarget "ColliTrenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A09DB34F2C017E6D00B35E13 /* Debug */,
+				A09DB3502C017E6D00B35E13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A09DB3512C017E6D00B35E13 /* Build configuration list for PBXNativeTarget "ColliTrenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A09DB3522C017E6D00B35E13 /* Debug */,
+				A09DB3532C017E6D00B35E13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A09DB31F2C017E6C00B35E13 /* Project object */;
+}
