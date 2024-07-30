@@ -20,6 +20,7 @@ struct Login: View {
                 Image(.back)
                     .resizable()
                     .scaledToFill()
+                    .frame(width: UIScreen.main.bounds.width * 1)
                 VStack{
                     
                     if loading {
@@ -81,15 +82,11 @@ struct Login: View {
                                 Spacer().frame(height: UIScreen.main.bounds.height * 0.08)
                                 
                                 VStack{
-                                   // Button{
-                                    //Task{
-                                        
-                                    //}
-                                            NavigationLink{
-                                               Home()
-                                            }
-                                      
-                                    //}
+                                   
+                                    NavigationLink{
+                                        Home()
+                                    }
+                                    
                                     label: {
                                         HStack{
                                             Text("Ingresar")
@@ -112,14 +109,15 @@ struct Login: View {
                                 
                                 
                                 NavigationLink{
-                                   SignUp()
+                                    RecoveryPass()
                                 }label: {
-                                    Text("Recupera tu contraseña")
+                                    Text("Olvidaste tu contraseña")
                                         .foregroundStyle(.black)
                                 }
                                 Text("o")
                                 NavigationLink{
-                                   RecoveryPass()
+                                    SignUp()
+                                   
                                 }label: {
                                     Text("Crea una cuenta")
                                         .foregroundStyle(.black)

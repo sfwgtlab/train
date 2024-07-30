@@ -18,6 +18,7 @@ struct SignUp: View {
             Image(.back)
                 .resizable()
                 .scaledToFill()
+                .frame(width: UIScreen.main.bounds.width * 1)
             VStack{
                 if(loading){
                     VStack{
@@ -27,7 +28,16 @@ struct SignUp: View {
                     }
                 }else{
                     VStack{
-                        
+                        VStack{
+                            Text("REGISTRATE")
+                                .font(Font.custom("Montserrat-Black", size: 20))
+                            VStack{
+                                Image(.logoblack)
+                                    .resizable()
+                                    .scaledToFit()
+                            }
+                            .frame(width: UIScreen.main.bounds.width * 0.8, height: UIScreen.main.bounds.height * 0.25  )
+                        }
                     }
                 }
             }
