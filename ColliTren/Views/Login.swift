@@ -20,7 +20,7 @@ struct Login: View {
                 Image(.back)
                     .resizable()
                     .scaledToFill()
-                    .frame(width: UIScreen.main.bounds.width * 1)
+                    .frame(width: UIScreen.main.bounds.width)
                 VStack{
                     
                     if loading {

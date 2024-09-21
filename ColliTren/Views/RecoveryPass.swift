@@ -15,6 +15,7 @@ struct RecoveryPass: View {
     @State var loading: Bool = false
     
     @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         NavigationStack{
             ZStack{
@@ -22,7 +23,7 @@ struct RecoveryPass: View {
                 Image(.back)
                     .resizable()
                     .scaledToFill()
-                    .frame(width: UIScreen.main.bounds.width * 1)
+                    .frame(width: UIScreen.main.bounds.width)
                 VStack{
                     VStack{
                         Text("OLVIDASTE TU CONTRASEÑA")
@@ -72,6 +73,7 @@ struct RecoveryPass: View {
                         }
                     }
                     
+                    Spacer().frame(height: UIScreen.main.bounds.height * 0.02)
                     
                     VStack{
                        
@@ -91,7 +93,7 @@ struct RecoveryPass: View {
                             .cornerRadius(20)
                         }
                     }
-                    Spacer().frame(height: UIScreen.main.bounds.height * 0.1)
+                    Spacer().frame(height: UIScreen.main.bounds.height * 0.05)
                     
                 }
             }
