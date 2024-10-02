@@ -101,7 +101,7 @@ struct RecoveryPass: View {
         }
         .navigationBarBackButtonHidden()
         .alert(isPresented: $showAlert, content: {
-            AlertView(title: title, message: message).ShowAlert()
+            AlertView(title: title, message: message).showAlert()
         })
         
     }

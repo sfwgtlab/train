@@ -13,6 +13,7 @@ struct Login: View {
     @State var user: String = ""
     @State var pass: String = ""
     @State var showPass: Bool = false
+    @StateObject var loginVM: LoginViewModel = LoginViewModel()
     var body: some View {
         NavigationStack{
             ZStack{
@@ -45,7 +46,7 @@ struct Login: View {
                             VStack{
                                 
                                 HStack{
-                                    TextField("Usuario", text: $user)
+                                    TextField("Usuario", text: $loginVM.user)
                                         .textInputAutocapitalization(.never)
                                 }
                                 .frame(width: UIScreen.main.bounds.width * 0.8)
@@ -56,10 +57,10 @@ struct Login: View {
                                 )
                                 Spacer().frame(height: UIScreen.main.bounds.height * 0.065)
                                 HStack{
-                                    showPass ? 
-                                       AnyView(SecureField("Contraseña", text: $pass))
+                                    !showPass ?
+                                    AnyView(SecureField("Contraseña", text: $loginVM.pass))
                                     :
-                                        AnyView( TextField("Contraseña", text: $pass)
+                                    AnyView( TextField("Contraseña", text: $loginVM.pass)
                                         .textInputAutocapitalization(.never))
                                     Button{
                                         Task{
@@ -83,8 +84,10 @@ struct Login: View {
                                 
                                 VStack{
                                    
-                                    NavigationLink{
-                                        Home()
+                                    Button{
+                                        Task{
+                                            loginVM.validateFields()
+                                        }
                                     }
                                     
                                     label: {
@@ -137,8 +140,14 @@ struct Login: View {
                 .zIndex(1)
                 
             }
+            .navigationDestination(isPresented: $loginVM.goToHome){
+                Home()
+            }
             
         }
+        .alert(isPresented: $loginVM.alert, content: {
+            AlertView(title: loginVM.alertTitle, message: loginVM.message).showAlert()
+        })
         
     }
     

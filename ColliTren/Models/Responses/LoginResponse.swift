@@ -9,6 +9,6 @@ import Foundation
 
 struct LoginResponse: Decodable {
     let message: String?
-    let codigo: Int
+    let code: Int
     let data: User?
 }

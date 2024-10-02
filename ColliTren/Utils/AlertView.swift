@@ -19,7 +19,7 @@ class AlertView{
         self.message = message
     }
     
-    func ShowAlert() -> Alert{
+    func showAlert() -> Alert{
         return Alert(
             title: Text(title),
             message: Text(message),
