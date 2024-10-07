@@ -21,23 +21,18 @@ class LoginViewModel: ObservableObject{
     func login(){
         loading = true
         LoginService.shared.login(user: user, pass: pass){ result in
-            print("el response del servicio es")
-            print(result    )
             DispatchQueue.main.async { [self] in
                 loading = false
                 self.loginResponse = result
                 self.message = result.message!
                 if(result.code == 200){
-                    print("entro a negativo")
                     self.alert = true
                     self.alertTitle = "OOPS"
                     
                 }else{
-                    print("entro a positivo")
                     self.goToHome = true
                 }
             }
-            
         }
     }
     

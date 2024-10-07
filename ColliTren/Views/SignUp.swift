@@ -9,10 +9,7 @@ import SwiftUI
 
 struct SignUp: View {
     @State var loading: Bool = false
-    @State var name: String = ""
-    @State var pass: String = ""
-    @State var email: String = ""
-    @State var showPass: Bool = false
+    @StateObject var signUpVM: SignUpViewModel = SignUpViewModel()
     
     @Environment(\.presentationMode) var presentationMode
     
@@ -47,7 +44,7 @@ struct SignUp: View {
                                 Spacer().frame(height: UIScreen.main.bounds.height * 0.065)
                                 VStack{
                                     HStack{
-                                        TextField("Nombre(s)", text: $name)
+                                        TextField("Nombre(s)", text: $signUpVM.name)
                                             .textInputAutocapitalization(.never)
                                     }
                                     .frame(width: UIScreen.main.bounds.width * 0.8)
@@ -58,7 +55,7 @@ struct SignUp: View {
                                     )
                                     Spacer().frame(height: UIScreen.main.bounds.height * 0.065)
                                     HStack{
-                                        TextField("Apellidos", text: $name)
+                                        TextField("Apellidos", text: $signUpVM.lastName)
                                             .textInputAutocapitalization(.never)
                                     }
                                     .frame(width: UIScreen.main.bounds.width * 0.8)
@@ -69,7 +66,7 @@ struct SignUp: View {
                                     )
                                     Spacer().frame(height: UIScreen.main.bounds.height * 0.065)
                                     HStack{
-                                        TextField("Correo electrónico", text: $name)
+                                        TextField("Correo electrónico", text: $signUpVM.email)
                                             .textInputAutocapitalization(.never)
                                     }
                                     .frame(width: UIScreen.main.bounds.width * 0.8)
@@ -81,18 +78,18 @@ struct SignUp: View {
                                     
                                     Spacer().frame(height: UIScreen.main.bounds.height * 0.065)
                                     HStack{
-                                        showPass ?
-                                           AnyView(SecureField("Contraseña", text: $pass))
+                                        !signUpVM.showPass ?
+                                        AnyView(SecureField("Contraseña", text: $signUpVM.pass))
                                         :
-                                            AnyView( TextField("Contraseña", text: $pass)
+                                        AnyView( TextField("Contraseña", text: $signUpVM.pass)
                                             .textInputAutocapitalization(.never))
                                         Button{
                                             Task{
-                                                showPass.toggle()
+                                                signUpVM.showPass.toggle()
                                             }
                                             
                                         }label: {
-                                            Image(systemName: showPass ? "eye.slash.fill" : "eye.fill")
+                                            Image(systemName: signUpVM.showPass ? "eye.slash.fill" : "eye.fill")
                                                 .padding(.horizontal, 2)
                                                 .foregroundColor(.first)
                                         }
@@ -102,22 +99,22 @@ struct SignUp: View {
                                     .overlay(
                                         RoundedRectangle(cornerRadius: 10)
                                             .stroke(.black, lineWidth: 0.5)
-                                            .padding(showPass ? -15 : -14.7)
+                                            .padding(signUpVM.showPass ? -15 : -14.7)
                                     )
                                     Spacer().frame(height: UIScreen.main.bounds.height * 0.065)
                                     HStack{
-                                        showPass ?
-                                           AnyView(SecureField("Confirmar contraseña", text: $pass))
+                                        !signUpVM.showPass ?
+                                        AnyView(SecureField("Confirmar contraseña", text: $signUpVM.confirmPass))
                                         :
-                                            AnyView( TextField("Confirmar contraseña", text: $pass)
+                                        AnyView( TextField("Confirmar contraseña", text: $signUpVM.confirmPass)
                                             .textInputAutocapitalization(.never))
                                         Button{
                                             Task{
-                                                showPass.toggle()
+                                                signUpVM.showPass.toggle()
                                             }
                                             
                                         }label: {
-                                            Image(systemName: showPass ? "eye.slash.fill" : "eye.fill")
+                                            Image(systemName: signUpVM.showPass ? "eye.slash.fill" : "eye.fill")
                                                 .padding(.horizontal, 2)
                                                 .foregroundColor(.first)
                                         }
@@ -127,15 +124,17 @@ struct SignUp: View {
                                     .overlay(
                                         RoundedRectangle(cornerRadius: 10)
                                             .stroke(.black, lineWidth: 0.5)
-                                            .padding(showPass ? -15 : -14.7)
+                                            .padding(signUpVM.showPass ? -15 : -14.7)
                                     )
                                 }
                                 Spacer().frame(height: UIScreen.main.bounds.height * 0.08)
                                 
                                 VStack{
                                    
-                                    NavigationLink{
-                                        Home()
+                                    Button{
+                                        Task{
+                                            signUpVM.validateFields()
+                                        }
                                     }
                                     
                                     label: {
@@ -180,6 +179,9 @@ struct SignUp: View {
             
         }
         .frame(maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+        .alert(isPresented: $signUpVM.alert, content: {
+            AlertView(title: signUpVM.alertTitle, message: signUpVM.message).showAlert()
+        })
         .navigationBarBackButtonHidden()
     }
 }
