@@ -8,11 +8,7 @@
 import SwiftUI
 
 struct RecoveryPass: View {
-    @State var showAlert: Bool = false
-    @State var title: String = "titulo"
-    @State var message: String = "Ingresa aqui el mensaje"
-    @State var user: String = ""
-    @State var loading: Bool = false
+    @StateObject var recoveryVM: RecoveryPassViewModel = RecoveryPassViewModel()
     
     @Environment(\.presentationMode) var presentationMode
     
@@ -41,7 +37,7 @@ struct RecoveryPass: View {
                     Spacer().frame(height: UIScreen.main.bounds.height * 0.15)
                     
                     HStack{
-                        TextField("Usuario", text: $user)
+                        TextField("Usuario", text: $recoveryVM.email)
                             .textInputAutocapitalization(.never)
                     }
                     .frame(width: UIScreen.main.bounds.width * 0.8)
@@ -55,8 +51,10 @@ struct RecoveryPass: View {
                     
                     VStack{
                         
-                        NavigationLink{
-                            Home()
+                        Button{
+                            Task{
+                                recoveryVM.validateField()
+                            }
                         }
                         
                         label: {
@@ -100,8 +98,8 @@ struct RecoveryPass: View {
            
         }
         .navigationBarBackButtonHidden()
-        .alert(isPresented: $showAlert, content: {
-            AlertView(title: title, message: message).showAlert()
+        .alert(isPresented: $recoveryVM.alert, content: {
+            AlertView(title: recoveryVM.alertTitle, message: recoveryVM.alertMessage).showAlert()
         })
         
     }

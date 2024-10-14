@@ -106,7 +106,7 @@ struct SignUp: View {
                                         !signUpVM.showPass ?
                                         AnyView(SecureField("Confirmar contraseña", text: $signUpVM.confirmPass))
                                         :
-                                        AnyView( TextField("Confirmar contraseña", text: $signUpVM.confirmPass)
+                                        AnyView( TextField("Confirmar contraseña", text: $signUpVM.confirmPass  )
                                             .textInputAutocapitalization(.never))
                                         Button{
                                             Task{
@@ -178,7 +178,7 @@ struct SignUp: View {
             }
             
         }
-        .frame(maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+        .padding(.vertical, 1)
         .alert(isPresented: $signUpVM.alert, content: {
             AlertView(title: signUpVM.alertTitle, message: signUpVM.message).showAlert()
         })
