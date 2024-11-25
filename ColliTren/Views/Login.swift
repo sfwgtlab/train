@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct Login: View {
-    
-    @State var loading: Bool = false
     @State var user: String = ""
     @State var pass: String = ""
     @State var showPass: Bool = false
@@ -24,7 +22,7 @@ struct Login: View {
                     .frame(width: UIScreen.main.bounds.width)
                 VStack{
                     
-                    if loading {
+                    if loginVM.loading {
                         VStack{
                             ProgressView()
                                 .progressViewStyle(.circular)
@@ -132,6 +130,7 @@ struct Login: View {
                             
                         
                         }
+                        
                         
                         
                     }
