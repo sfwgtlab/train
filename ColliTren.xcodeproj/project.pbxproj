@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		A010B6792C1640BF003C4DFB /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A010B6782C1640BF003C4DFB /* AlertView.swift */; };
+		A010B67B2C1656B2003C4DFB /* GoBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A010B67A2C1656B2003C4DFB /* GoBack.swift */; };
+		A018FE952CBC706F00D30E5B /* RecoveryPassService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A018FE942CBC706F00D30E5B /* RecoveryPassService.swift */; };
+		A018FE972CBCB33000D30E5B /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A018FE962CBCB33000D30E5B /* NavBar.swift */; };
+		A048CEA12C7040F9002A2DFF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A048CEA02C7040F9002A2DFF /* LoginViewModel.swift */; };
+		A05B93962CAE4A2F0007E28D /* SignUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05B93952CAE4A2F0007E28D /* SignUpService.swift */; };
+		A05B93982CAE4A450007E28D /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05B93972CAE4A450007E28D /* SignUpViewModel.swift */; };
+		A05B939A2CAE4AFF0007E28D /* GeneralResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05B93992CAE4AFF0007E28D /* GeneralResponse.swift */; };
+		A05D76EE2CF3E658003277CA /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05D76ED2CF3E658003277CA /* SideMenu.swift */; };
+		A05D76F02CF3EE3C003277CA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05D76EF2CF3EE3C003277CA /* HomeViewModel.swift */; };
 		A092F9C92C03FAD70051E900 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A092F9B72C03FAD70051E900 /* Montserrat-Medium.ttf */; };
 		A092F9CA2C03FAD70051E900 /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A092F9B82C03FAD70051E900 /* Montserrat-ThinItalic.ttf */; };
 		A092F9CB2C03FAD70051E900 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A092F9B92C03FAD70051E900 /* Montserrat-ExtraBold.ttf */; };
@@ -37,6 +46,11 @@
 		A09DB3462C017E6D00B35E13 /* ColliTrenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DB3452C017E6D00B35E13 /* ColliTrenUITests.swift */; };
 		A09DB3482C017E6D00B35E13 /* ColliTrenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DB3472C017E6D00B35E13 /* ColliTrenUITestsLaunchTests.swift */; };
 		A09DB3582C019A2100B35E13 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09DB3572C019A2100B35E13 /* Login.swift */; };
+		A0A46A7D2CB38E9A009A8431 /* RecoveryPassViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A46A7C2CB38E9A009A8431 /* RecoveryPassViewModel.swift */; };
+		A0EEF3E12C9E77A50069085D /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EEF3E02C9E77A50069085D /* LoginService.swift */; };
+		A0EEF3E32C9E77F20069085D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EEF3E22C9E77F20069085D /* Constants.swift */; };
+		A0EEF3E62C9E78D70069085D /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EEF3E52C9E78D70069085D /* LoginResponse.swift */; };
+		A0EEF3E82C9E79060069085D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EEF3E72C9E79060069085D /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +72,15 @@
 
 /* Begin PBXFileReference section */
 		A010B6782C1640BF003C4DFB /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		A010B67A2C1656B2003C4DFB /* GoBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoBack.swift; sourceTree = "<group>"; };
+		A018FE942CBC706F00D30E5B /* RecoveryPassService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryPassService.swift; sourceTree = "<group>"; };
+		A018FE962CBCB33000D30E5B /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
+		A048CEA02C7040F9002A2DFF /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		A05B93952CAE4A2F0007E28D /* SignUpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpService.swift; sourceTree = "<group>"; };
+		A05B93972CAE4A450007E28D /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		A05B93992CAE4AFF0007E28D /* GeneralResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralResponse.swift; sourceTree = "<group>"; };
+		A05D76ED2CF3E658003277CA /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		A05D76EF2CF3EE3C003277CA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		A092F9B72C03FAD70051E900 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		A092F9B82C03FAD70051E900 /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
 		A092F9B92C03FAD70051E900 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
@@ -90,6 +113,11 @@
 		A09DB3452C017E6D00B35E13 /* ColliTrenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColliTrenUITests.swift; sourceTree = "<group>"; };
 		A09DB3472C017E6D00B35E13 /* ColliTrenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColliTrenUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A09DB3572C019A2100B35E13 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		A0A46A7C2CB38E9A009A8431 /* RecoveryPassViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryPassViewModel.swift; sourceTree = "<group>"; };
+		A0EEF3E02C9E77A50069085D /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		A0EEF3E22C9E77F20069085D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A0EEF3E52C9E78D70069085D /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		A0EEF3E72C9E79060069085D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,8 +149,21 @@
 			isa = PBXGroup;
 			children = (
 				A010B6782C1640BF003C4DFB /* AlertView.swift */,
+				A010B67A2C1656B2003C4DFB /* GoBack.swift */,
+				A0EEF3E22C9E77F20069085D /* Constants.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		A03D49662C63287B00D9FEEB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A048CEA02C7040F9002A2DFF /* LoginViewModel.swift */,
+				A05B93972CAE4A450007E28D /* SignUpViewModel.swift */,
+				A0A46A7C2CB38E9A009A8431 /* RecoveryPassViewModel.swift */,
+				A05D76EF2CF3EE3C003277CA /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		A092F9B62C03F95D0051E900 /* Fonts */ = {
@@ -173,6 +214,8 @@
 		A09DB3292C017E6C00B35E13 /* ColliTren */ = {
 			isa = PBXGroup;
 			children = (
+				A0EEF3DF2C9E72E20069085D /* Services */,
+				A03D49662C63287B00D9FEEB /* ViewModels */,
 				A010B6752C163CF9003C4DFB /* Utils */,
 				A092F9B62C03F95D0051E900 /* Fonts */,
 				A09DB3562C019A0700B35E13 /* Component */,
@@ -225,6 +268,8 @@
 		A09DB3552C0199FF00B35E13 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A0EEF3E42C9E78C60069085D /* Responses */,
+				A0EEF3E72C9E79060069085D /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -232,8 +277,29 @@
 		A09DB3562C019A0700B35E13 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				A018FE962CBCB33000D30E5B /* NavBar.swift */,
+				A05D76ED2CF3E658003277CA /* SideMenu.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		A0EEF3DF2C9E72E20069085D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A0EEF3E02C9E77A50069085D /* LoginService.swift */,
+				A05B93952CAE4A2F0007E28D /* SignUpService.swift */,
+				A018FE942CBC706F00D30E5B /* RecoveryPassService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A0EEF3E42C9E78C60069085D /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				A05B93992CAE4AFF0007E28D /* GeneralResponse.swift */,
+				A0EEF3E52C9E78D70069085D /* LoginResponse.swift */,
+			);
+			path = Responses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,13 +450,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0EEF3E82C9E79060069085D /* User.swift in Sources */,
+				A018FE952CBC706F00D30E5B /* RecoveryPassService.swift in Sources */,
+				A018FE972CBCB33000D30E5B /* NavBar.swift in Sources */,
 				A09DB3582C019A2100B35E13 /* Login.swift in Sources */,
+				A0A46A7D2CB38E9A009A8431 /* RecoveryPassViewModel.swift in Sources */,
+				A0EEF3E32C9E77F20069085D /* Constants.swift in Sources */,
+				A0EEF3E62C9E78D70069085D /* LoginResponse.swift in Sources */,
+				A05D76EE2CF3E658003277CA /* SideMenu.swift in Sources */,
 				A092F9E02C0406730051E900 /* SignUp.swift in Sources */,
 				A010B6792C1640BF003C4DFB /* AlertView.swift in Sources */,
 				A09DB32D2C017E6C00B35E13 /* ContentView.swift in Sources */,
+				A05B93982CAE4A450007E28D /* SignUpViewModel.swift in Sources */,
 				A092F9DC2C0405FB0051E900 /* Home.swift in Sources */,
 				A092F9DE2C04060D0051E900 /* RecoveryPass.swift in Sources */,
+				A05B93962CAE4A2F0007E28D /* SignUpService.swift in Sources */,
+				A010B67B2C1656B2003C4DFB /* GoBack.swift in Sources */,
+				A05D76F02CF3EE3C003277CA /* HomeViewModel.swift in Sources */,
+				A0EEF3E12C9E77A50069085D /* LoginService.swift in Sources */,
+				A05B939A2CAE4AFF0007E28D /* GeneralResponse.swift in Sources */,
 				A09DB32B2C017E6C00B35E13 /* ColliTrenApp.swift in Sources */,
+				A048CEA12C7040F9002A2DFF /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

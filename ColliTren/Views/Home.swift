@@ -37,8 +37,8 @@ struct Home: View {
                                 .padding(.top, 30)
                             TabView{
                                 
-                                ForEach(0 ..< $homeVM.Images.count){ img in
-                                    Image("\(homeVM.Images[img])")
+                                ForEach(0 ..< $homeVM.routesImages.count, id: \.self){ img in
+                                    Image("\(homeVM.routesImages[img])")
                                         .resizable()
                                 }
                             }
@@ -51,6 +51,33 @@ struct Home: View {
                             Text("Nuestros Trenes")
                                 .font(Font.custom("Montserrat-Black", size: 25))
                                 .padding(.top, 30)
+                            
+                            TabView{
+                                
+                                ForEach(0 ..< $homeVM.trainImages.count, id: \.self){ img in
+                                    VStack{
+                                        Spacer()
+                                        Image("\(homeVM.trainImages[img])")
+                                            .resizable()
+                                            .frame(width: UIScreen.main.bounds.width, height: 100)
+                                        Spacer()
+                                        Text("\(homeVM.trainDesc[img])")
+                                            .font(Font.custom("Montserrat-Black", size: 15))
+                                            .frame( alignment: .center)
+                                        Spacer()
+                                    }
+                                   
+                                }
+                                
+                                
+                                
+                            }
+                            .frame(height: 280)
+                            .padding(.vertical, 0)
+                            .padding(.horizontal, 20)
+                            .tabViewStyle(PageTabViewStyle())
+                            .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+                            
                         }
                     }
                     
